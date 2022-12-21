@@ -5,17 +5,17 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 function App() {
   return (
    <>
-   <AuthWrapper >
+   {/* <AuthWrapper > */}
 
    <BrowserRouter>
         <Routes>
-          <Route exact={true} path="/" element={<PrivateRoute><Dashboard/></PrivateRoute>} />
+          <Route exact={true} path="/" element={<Dashboard/>} />
           <Route exact path="/login" element={<Login/>} />
           <Route exact path="*" element={<Error/>} />    
       </Routes>
     </BrowserRouter>
    
-   </AuthWrapper>
+   {/* </AuthWrapper> */}
    </>
   );
 }
