@@ -11,7 +11,7 @@ const Navbar = () => {
     {isUser ? 
     <button onClick={() => logout({ returnTo: window.location.origin })}>
     Log Out
-  </button> :  <button onClick={() => loginWithRedirect()}>Welcome</button>
+  </button> :  <button onClick={() => loginWithRedirect()} style={{    fontSize: "2rem", color: "black"}}>Welcome to Github User search</button>
   }
    
     
